@@ -3,6 +3,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 const SignatureSelector=()=>{
     
+    
     const handlePress=(asignatura:any) => {
         router.push({
             pathname: '/AskToGpt',
@@ -12,6 +13,8 @@ const SignatureSelector=()=>{
     return(
         <View style={maquetacion.AsignaturasGlobal}>
         <View style={maquetacion.Columnas}>
+
+        
         <TouchableOpacity onPress={()=>handlePress('castellano')} style={maquetacion.BotonCastellano}>
             <Text style={maquetacion.BotonTextoBlanco}>Castellano</Text>
             </TouchableOpacity>
@@ -123,7 +126,7 @@ const maquetacion=StyleSheet.create({
         alignItems:'center' 
     },
     BotonDibujoTecnico:{
-        backgroundColor:'#000000',
+        backgroundColor:'#000000', //negro
         width:'60%',
         padding:10,
         alignItems:'center'
